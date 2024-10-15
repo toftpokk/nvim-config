@@ -1,5 +1,6 @@
--- -- Toftpokk's Vim Config
--- 
+require("config.lazy")
+
+
 -- -- Lazy.nvim needs leader first
 -- vim.g.mapleader = ' '
 -- 
