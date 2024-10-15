@@ -1,9 +1,8 @@
 require("config.lazy")
 
-
 -- -- Lazy.nvim needs leader first
 -- vim.g.mapleader = ' '
--- 
+--
 -- ---- Plugins
 -- require('user.bootstrap')
 -- require('user.plugins')
@@ -20,43 +19,14 @@ require("config.lazy")
 -- require('user.telescope')
 -- require('user.qf')
 -- require('user.toggleterm')
--- 
--- -- :set vim.opt.option_name
--- local options = {
---   -- Tabs
---   expandtab=true,		-- Use tabs when presses tab
---   tabstop=2,			-- one tab = 4 colums
---   softtabstop=2,		-- All tabs equal to 4
---   shiftwidth=2,			-- >> and << move width
---   smarttab=true,		-- Tabs are only used for indentation
--- 
---   -- Indents
---   autoindent=true,		-- Automatically indent next line
---   smartindent=true,		-- Helps auto indent readt to syntax
---   backspace="indent,eol,start",	-- Backspace over autoindent and line breaks
---   -- Matching
---   showmatch=true,		-- Show matching bracket
---   ignorecase=true,		-- Ignore case when searching
--- 
---   -- Decor
---   wrap=false,			-- No wrap text
---   number=true,			-- Show number
---   showcmd=true,			-- Current command
---   termguicolors=true,	-- set gui color
---   clipboard="unnamedplus", -- Aways copy to clipboard
---   scrolloff=5, -- top/bottom spacing when scrolling
--- 
---   delcombine=true,
---   -- colorcolumn="80", -- put a color column at col=80
--- }
 -- vim.syntax=true
--- 
+--
 -- -- Fold makes nvim *slow*
 -- -- vim.opt.foldmethod="indent"
 -- -- vim.opt.foldlevel = 99
 -- -- vim.g.vimwiki_folding = 'list'
 -- -- vim.g.markdown_folding = 1
--- 
+--
 -- for k, v in pairs(options) do
 --   vim.opt[k] = v
 -- end
@@ -65,7 +35,7 @@ require("config.lazy")
 -- --  vim.api.nvim_create_user_command("Run", "!%:p",{})
 -- --  vim.api.nvim_create_user_command("Py", "!python %",{})
 -- --  vim.api.nvim_create_user_command("M", ":w | make",{})
--- 
+--
 -- vim.api.nvim_create_user_command("Format", function()
 --   if vim.bo.filetype == "html" then
 --     vim.cmd("%!xmllint -html %")
@@ -75,7 +45,7 @@ require("config.lazy")
 --     vim.cmd("%!python -m json.tool %")
 --   end
 --  end,{})
--- 
+--
 -- -- Status Line
 -- local statusline=""
 -- statusline=table.concat {
@@ -94,7 +64,7 @@ require("config.lazy")
 -- 	"\\ %P\\ "	-- Percentage
 -- }
 -- vim.cmd("set statusline="..statusline)
--- 
+--
 -- -- Auto format
 -- vim.api.nvim_create_autocmd({"BufWritePost"}, {
 -- 	pattern="*.tex",
@@ -103,7 +73,7 @@ require("config.lazy")
 --     -- vim.api.nvim_exec("exec '!latexmk -xelatex %'",true) -- works with thai text
 -- 	end
 -- })
--- 
+--
 -- -- Filetypes
 -- vim.api.nvim_create_autocmd({"BufRead","BufNewFile"}, {
 -- 	pattern="nginx.conf",
@@ -123,8 +93,8 @@ require("config.lazy")
 -- 		vim.opt.ft = "gitignore"
 -- 	end
 -- })
--- 
--- 
+--
+--
 -- -- Open Tree at startup
 -- local function open_nvim_tree(data)
 --   -- buffer is a real file on the disk
@@ -137,9 +107,9 @@ require("config.lazy")
 --   -- open the tree, find the file but don't focus it
 --   require("nvim-tree.api").tree.toggle({ focus = false, find_file = true, })
 -- end
--- 
+--
 -- -- vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
--- 
+--
 -- -- Return to last pos, See: https://www.reddit.com/r/neovim/comments/uri33x/autocommand_to_go_to_last_position_in_the_document/
 -- vim.api.nvim_create_autocmd({'BufReadPost'},{
 --   pattern='*',
@@ -151,4 +121,4 @@ require("config.lazy")
 --     end
 --   end
 -- })
--- 
+--
