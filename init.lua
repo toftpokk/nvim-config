@@ -6,13 +6,15 @@ vim.g.mapleader = ' '
 ---- Plugins
 require('user.bootstrap')
 require('user.plugins')
-require('user.cmp')
-require('user.keymap')
-require('user.lsp')
-require('user.nvim-tree')
 require('user.theme')
+require('user.keymap')
+
+require('user.cmp')
+require('user.lsp')
+
+require('user.nvim-tree')
 require('user.treesitter')
-require('user.null-ls')
+require('user.none-ls')
 require('user.vimwiki')
 require('user.indent-blankline')
 require('user.gitsigns')

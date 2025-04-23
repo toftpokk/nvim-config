@@ -3,8 +3,9 @@ return {
   'tpope/vim-fugitive',
   'sindrets/diffview.nvim',
 
-  -- LSP
+  -- LSP & Tooling
   'neovim/nvim-lspconfig',
+  'nvimtools/none-ls.nvim', -- Formatting & LSP
   
   -- Highlights
   'Fymyte/rasi.vim',  -- Rofi
@@ -35,9 +36,6 @@ return {
   'hrsh7th/cmp-nvim-lsp', -- nvim language servers
   'hrsh7th/cmp-nvim-lua', -- lua api
   'hrsh7th/cmp-cmdline', -- vim commandline
-
-  -- Formatting
-  'jose-elias-alvarez/null-ls.nvim',
 
   -- Wiki
   'vimwiki/vimwiki',
