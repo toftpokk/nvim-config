@@ -1,4 +1,5 @@
 require("config.lazy")
+require("user.theme")
 
 -- -- Lazy.nvim needs leader first
 -- vim.g.mapleader = ' '
