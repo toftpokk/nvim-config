@@ -21,6 +21,7 @@ require('user.gitsigns')
 require('user.telescope')
 require('user.qf')
 require('user.toggleterm')
+require('user.whichkey')
 
 -- :set vim.opt.option_name
 local options = {

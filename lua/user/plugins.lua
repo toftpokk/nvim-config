@@ -49,4 +49,7 @@ return {
 
   -- Terminal
   {'akinsho/toggleterm.nvim', version = '*'},
+
+  -- Key
+  'folke/which-key.nvim'
 }
