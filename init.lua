@@ -8,6 +8,7 @@ require('user.bootstrap')
 require('user.plugins')
 require('user.theme')
 require('user.keymap')
+require('user.reload')
 
 require('user.cmp')
 require('user.lsp')

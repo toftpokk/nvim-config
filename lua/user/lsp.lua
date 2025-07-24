@@ -1,5 +1,8 @@
 lspconfig = require 'lspconfig'
 
+-- Show full error messages
+vim.diagnostic.config({ virtual_text = true })
+
 -- Setup capabilities for cmp
 -- Capabilities: https://github.com/neovim/nvim-lspconfig/blob/master/lsp
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -12,9 +15,10 @@ lspconfig.ts_ls.setup{
 lspconfig.bashls.setup{
   capabilities = capabilities
 }
-lspconfig.rust_analyzer.setup{
-  capabilities = capabilities
-}
+-- rust analyzer takes a lot of power
+-- lspconfig.rust_analyzer.setup{
+--   capabilities = capabilities
+-- }
 lspconfig.gopls.setup{
   cmd = {'gopls'},
   -- on_attach = on_attach,
