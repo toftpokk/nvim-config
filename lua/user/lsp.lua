@@ -16,9 +16,9 @@ lspconfig.bashls.setup{
   capabilities = capabilities
 }
 -- rust analyzer takes a lot of power
--- lspconfig.rust_analyzer.setup{
---   capabilities = capabilities
--- }
+lspconfig.rust_analyzer.setup{
+  capabilities = capabilities
+}
 lspconfig.gopls.setup{
   cmd = {'gopls'},
   -- on_attach = on_attach,
